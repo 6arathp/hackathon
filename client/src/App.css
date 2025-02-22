@@ -1,0 +1,11 @@
+
+.large-input {
+  width: 400px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.generated-query{
+  margin-bottom: 40px;
+}
