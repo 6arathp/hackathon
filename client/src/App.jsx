@@ -7,13 +7,13 @@ function App() {
   const [generatedQuery, setGeneratedQuery] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
-
+  const API_URL = import.meta.env.VITE_API_URL;
   const handleQuerySubmit = async (naturalQuery) => {
     setIsLoading(true);
     setError('');
     
     try {
-      const response = await fetch('/api/query', {
+      const response = await fetch(`${API_URL}/api/query`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: naturalQuery })
