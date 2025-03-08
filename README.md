@@ -20,6 +20,11 @@ Task is to build an AI-driven system that dynamically selects the most relevant 
 
 ## Setup project
 
+### Clone the repo
+
+```
+git clone https://github.com/6arathp/hackathon.git
+```
 ### Backend (ExpressJS)
 
 ```
