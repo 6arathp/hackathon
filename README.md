@@ -45,6 +45,6 @@ npm install
 npm run dev
 ```
 \
-**Don't forget to setup ENV variavbles.**
+**Don't forget to setup ENV variables.**
 
 
