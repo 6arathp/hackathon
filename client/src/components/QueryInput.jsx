@@ -11,13 +11,16 @@ const QueryInput = ({ onSubmit, isLoading }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
-        type="text"
+      <textarea
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        placeholder="Enter your data request in natural language"
+        placeholder={`Try queries like:
+  - "Show all employees"
+  - "List employees with salary > 50000"
+  - "Employees hired after 2020"`}
         disabled={isLoading}
         className="large-input"
+        rows={5} // Increase height by default
       />
       <button type="submit" disabled={isLoading}>
         {isLoading ? 'Processing...' : 'Submit'}
