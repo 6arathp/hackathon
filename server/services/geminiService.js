@@ -8,68 +8,70 @@ const generateSQL = async (naturalLanguage) => {
   const tableSchema = `
     [
   {
-    "schema_json": [
-      {
-        "employees": "employees",
-        "columns": [
-          {
-            "column_name": "EMPLOYEE_ID",
-            "data_type": "bigint",
-            "is_nullable": "NO"
-          },
-          {
-            "column_name": "FIRST_NAME",
-            "data_type": "text",
-            "is_nullable": "YES"
-          },
-          {
-            "column_name": "LAST_NAME",
-            "data_type": "text",
-            "is_nullable": "YES"
-          },
-          {
-            "column_name": "EMAIL",
-            "data_type": "text",
-            "is_nullable": "YES"
-          },
-          {
-            "column_name": "PHONE_NUMBER",
-            "data_type": "text",
-            "is_nullable": "YES"
-          },
-          {
-            "column_name": "HIRE_DATE",
-            "data_type": "text",
-            "is_nullable": "YES"
-          },
-          {
-            "column_name": "JOB_ID",
-            "data_type": "text",
-            "is_nullable": "YES"
-          },
-          {
-            "column_name": "SALARY",
-            "data_type": "bigint",
-            "is_nullable": "YES"
-          },
-          {
-            "column_name": "COMMISSION_PCT",
-            "data_type": "text",
-            "is_nullable": "YES"
-          },
-          {
-            "column_name": "MANAGER_ID",
-            "data_type": "text",
-            "is_nullable": "YES"
-          },
-          {
-            "column_name": "DEPARTMENT_ID",
-            "data_type": "bigint",
-            "is_nullable": "YES"
-          }
-        ]
-      }
-    ]
+    "table_name": "employees",
+    "column_name": "EMPLOYEE_ID",
+    "data_type": "bigint",
+    "is_nullable": "NO"
+  },
+  {
+    "table_name": "employees",
+    "column_name": "FIRST_NAME",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "employees",
+    "column_name": "LAST_NAME",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "employees",
+    "column_name": "EMAIL",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "employees",
+    "column_name": "PHONE_NUMBER",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "employees",
+    "column_name": "HIRE_DATE",
+    "data_type": "date",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "employees",
+    "column_name": "JOB_ID",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "employees",
+    "column_name": "SALARY",
+    "data_type": "bigint",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "employees",
+    "column_name": "COMMISSION_PCT",
+    "data_type": "text",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "employees",
+    "column_name": "MANAGER_ID",
+    "data_type": "bigint",
+    "is_nullable": "YES"
+  },
+  {
+    "table_name": "employees",
+    "column_name": "DEPARTMENT_ID",
+    "data_type": "bigint",
+    "is_nullable": "YES"
   }
 ]
   `;
