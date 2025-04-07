@@ -1,6 +1,6 @@
 
 ### Site (hosted on vercel): https://hackathon-barath.vercel.app/
-### Backend: check this endpoint to check if backend is running. FIrst boot may take 20+ seconds. https://hackathon-w3hd.onrender.com/health
+### Backend: If site is not working check this endpoint if backend is running. FIrst boot may take 20+ seconds. https://hackathon-w3hd.onrender.com/health
 # NATURAL LANGUAGE TO SQL QUERY
 
 ## Hackathon Challenge: AI-Powered Schema Selection for NL to SQL Pipelines
