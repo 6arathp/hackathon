@@ -10,23 +10,20 @@ const QueryInput = ({ onSubmit, isLoading }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <textarea
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        placeholder={`Try queries like:
-  - "Show all employees"
-  - "List employees with salary > 50000"
-  - "Employees hired after 2020"`}
-        disabled={isLoading}
-        className="large-input"
-        rows={5} // Increase height by default
-      />
-      <button type="submit" disabled={isLoading}>
-        {isLoading ? 'Processing...' : 'Submit'}
-      </button>
-    </form>
-  );
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder='Enter Query in Natural Language e.g. "all" or "salary more than 150" '
+          disabled={isLoading}
+          className="large-input"
+        />
+        <button type="submit" disabled={isLoading}>
+          {isLoading ? 'Processing...' : 'Submit'}
+        </button>
+      </form>
+    );
 };
 
 export default QueryInput;
