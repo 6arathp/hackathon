@@ -15,7 +15,7 @@ const QueryInput = ({ onSubmit, isLoading }) => {
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder='Enter Query in Natural Language e.g. "all" or "salary more than 150" '
+          placeholder='Enter Query. e.g. "all" or "salary more than 150" '
           disabled={isLoading}
           className="large-input"
         />
