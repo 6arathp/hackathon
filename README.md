@@ -48,5 +48,13 @@ npm run dev
 ```
 \
 **Don't forget to setup ENV variables.**
-
-
+## Server
+```
+DATABASE_URL=""
+GEMINI_API_KEY=""
+PORT=""
+```
+## Client
+```
+VITE_API_URL=""
+```
